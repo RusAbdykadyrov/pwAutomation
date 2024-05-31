@@ -1,0 +1,59 @@
+{
+  "cookies": [
+    {
+      "name": "_ga",
+      "value": "GA1.1.166695214.1717122808",
+      "domain": ".pasv.us",
+      "path": "/",
+      "expires": 1751682808.049535,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_Y93QPS2282",
+      "value": "GS1.1.1717122808.1.1.1717122808.0.0.0",
+      "domain": ".pasv.us",
+      "path": "/",
+      "expires": 1751682808.056828,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "user_auth",
+      "value": "true",
+      "domain": ".pasv.us",
+      "path": "/",
+      "expires": 1717295608.555163,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "connect.sid",
+      "value": "s%3A1FdxmUkorVuRrtGtP3DzI25OJk9W4axG.%2BBwrS7SxvZdvTF2XfCQ%2Bz0iG%2BS8%2FZAlsL34sKbkc1qQ",
+      "domain": ".pasv.us",
+      "path": "/",
+      "expires": 1717295608.555217,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://coding.pasv.us",
+      "localStorage": [
+        {
+          "name": "lang",
+          "value": "en"
+        },
+        {
+          "name": "userId",
+          "value": "64e7d93e0141f763dc22df73"
+        }
+      ]
+    }
+  ]
+}
