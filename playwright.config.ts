@@ -31,15 +31,30 @@ export default defineConfig({
   },
 
   /* Configure projects for major browsers */
-  projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
+  // projects: [
+  //   { name: 'setup', testMatch: /.*\.setup\.ts/ },
+  //   {
+  //     name: 'chromium',
+  //     use: { ...devices['Desktop Chrome'], headless: false, storageState: './.auth/user.json',},
+  //     dependencies: ['setup'],
+  //   },
+    projects: [
+      { name: 'setup', testMatch: /.*\.setup\.ts/ },
+      {
+        name: 'chromium',
+        use: { ...devices['Desktop Chrome'], headless: false, storageState: './.authPASV/user.json',},
+        dependencies: ['setup'],
+      },
+  
+
+
+
+
+
 
     // {
     //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
+    //   use: { ...devices['Desktop Firefox'] storageState: 'playwright/.auth/user.json',},
     // },
 
     // {
