@@ -39,8 +39,8 @@ timeout:5000
  testMatch: 'test.list.ts',
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+    name: 'chromium',
+   use: { ...devices['Desktop Chrome'] },
     },
 
     // {
