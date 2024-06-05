@@ -33,15 +33,15 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
  
- expect:{
-timeout:5000
- },
- testMatch: 'test.list.ts',
-  projects: [
-    {
-    name: 'chromium',
-   use: { ...devices['Desktop Chrome'] },
-    },
+//  expect:{
+// timeout:5000
+//  },
+//  testMatch: 'test.list.ts',
+//   projects: [
+//     {
+//     name: 'chromium',
+//    use: { ...devices['Desktop Chrome'] },
+//     },
 
     // {
     //   name: 'firefox',
