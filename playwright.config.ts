@@ -28,18 +28,30 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+
+  
+
     video:"on-first-retry",
+
   },
 expect: { timeout: 5000,
 },
   /* Configure projects for major browsers */
+ 
+ expect:{
+timeout:5000
+ },
+ testMatch: 'test.list.ts',
   projects: [
     { name: 'setup', testMatch: /.*\.setup\.ts/ },
     {
+
+
       name: 'chromium',
       use: { ...devices['Desktop Chrome'], headless: false, }
       //storageState: './.auth/user.json',},
       //dependencies: ['setup'],
+
     },
     // projects: [
     //   { name: 'setup', testMatch: /.*\.setup\.ts/ },
@@ -79,7 +91,7 @@ expect: { timeout: 5000,
     //   name: 'Google Chrome',
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
-  ],
+  
 
   /* Run your local dev server before starting the tests */
   // webServer: {
@@ -87,4 +99,6 @@ expect: { timeout: 5000,
   //   url: 'http://127.0.0.1:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
-});
+//}
+  ]
+  })
