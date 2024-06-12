@@ -36,7 +36,7 @@ expect: { timeout: 5000,
   /* Configure projects for major browsers */
  //testMatch: 'test.list.ts',
   projects: [
-    { name: 'setup', testMatch: /.*\.setup\.ts/ },
+   // { name: 'setup', testMatch: /.*\.setup\.ts/ },
     {
 
 
