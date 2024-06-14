@@ -1,0 +1,25 @@
+    
+name: Playwright tests
+
+on:
+  push:
+    branches: [develop, master]
+  pull_request:
+    branches: [develop, master]
+
+jobs:  # исправлено с job на jobs
+  test:
+    runs-on: ubuntu-latest  # исправлено с run-on на runs-on
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies  # исправлено с Instal на Install
+        run: npm install --force  # исправлено с npm i -- force на npm install --force
+
+      - name: Install Playwright  # исправлено с Instal на Install
+        run: npx playwright install --with-deps  #
