@@ -1,4 +1,3 @@
-    
 name: Playwright tests
 
 on:
@@ -22,4 +21,12 @@ jobs:
         run: npm install --force 
 
       - name: Install Playwright  
-        run: npx playwright install --with-deps  
+        run: npx playwright install --with-deps 
+
+      - name: Install Allure reports
+        run: |
+          npm install -D allure-commandline --force
+          npx allure generate ./allure-results --clean
+
+      - name: Run Playwright test
+        run: npx playwright lambdaTest

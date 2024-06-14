@@ -41,7 +41,7 @@ expect: { timeout: 5000,
 
 
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'], headless: false, }
+      use: { ...devices['Desktop Chrome'], headless: true, }
       //storageState: './.auth/user.json',},
       //dependencies: ['setup'],
 
