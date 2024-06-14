@@ -29,4 +29,4 @@ jobs:
           npx allure generate ./allure-results --clean
 
       - name: Run Playwright test
-        run: npx playwright lambdaTest
+        run: npx playwright lambdatest
