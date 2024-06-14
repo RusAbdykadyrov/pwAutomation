@@ -7,9 +7,9 @@ on:
   pull_request:
     branches: [develop, master]
 
-jobs:  # исправлено с job на jobs
+jobs:  
   test:
-    runs-on: ubuntu-latest  # исправлено с run-on на runs-on
+    runs-on: ubuntu-latest  
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v3
@@ -18,8 +18,8 @@ jobs:  # исправлено с job на jobs
         with:
           node-version: '18'
 
-      - name: Install dependencies  # исправлено с Instal на Install
-        run: npm install --force  # исправлено с npm i -- force на npm install --force
+      - name: Install dependencies  
+        run: npm install --force 
 
-      - name: Install Playwright  # исправлено с Instal на Install
-        run: npx playwright install --with-deps  #
+      - name: Install Playwright  
+        run: npx playwright install --with-deps  
