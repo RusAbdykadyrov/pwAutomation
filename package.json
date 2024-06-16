@@ -12,7 +12,7 @@
     "dropDown": "npx playwright test dropDown.spec.ts",
     "lambdaTest": "npx playwright test lambdatest.spec.ts",
     "network": "npx playwright test network.spec.ts",
-    "PASV": "npx playwright test PASV.spec.ts"
+    "pasv": "npx playwright test PASV.spec.ts"
     
   },
   "dependencies": {
