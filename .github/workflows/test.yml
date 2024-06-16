@@ -9,7 +9,7 @@ on:
 jobs:  
   test:
     runs-on: ubuntu-latest  
-    timeout-minutes: 60
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v3
 
@@ -18,36 +18,29 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies  
-        run: npm install --force 
+        run: npm i --force 
 
       - name: Install Playwright  
         run: npx playwright install --with-deps 
 
       - name: Install Allure reports
-        run: npm install -D allure-commandline --force
+        run: |
+            npm install -D allure-commandline --force
+            npx allure generate ./allure-resultes --clean 
 
       - name: Run Playwright tests
-        run: npx playwright test --reporter=line,junit --output=allure-results
-
-      - name: Generate Allure report
-        run: npx allure generate allure-results --clean -o allure-report
-
-      - name: Playwright Network
         run: npx playwright PASV
-
-      - name: Upload Playwright report
+      - uses: actions/upload-artifact@v3
         if: always()
-        uses: actions/upload-artifact@v3
         with:
-          name: playwright-report
-          path: allure-results
+          name: playwright-report 
+          path: playwright-report/
           retention-days: 30
 
-      - name: Upload Allure report
+      - uses: actions/upload-artifact@v3
         if: always()
-        uses: actions/upload-artifact@v3
         with:
           name: playwright-allure
-          path: allure-report
+          path: allure-report/
           retention-days: 30
          
