@@ -33,7 +33,7 @@ jobs:
         run: npx allure generate allure-results --clean -o allure-report
 
       - name: Playwright Network
-        run: npx playwright network
+        run: npx playwright PASV
 
       - name: Upload Playwright report
         if: always()
