@@ -43,4 +43,6 @@ jobs:
           name: playwright-allure
           path: allure-report/
           retention-days: 30
+      - name: List Allure report directory
+        run: ls -al allure-report
          
