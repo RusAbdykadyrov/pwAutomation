@@ -65,5 +65,5 @@ jobs:
             - name: Install Playwright
               run: npx playwright install -- with-deps
             - name: Run test
-              run: npm run lambdaTest  
+              run: npx run lambdaTest  
               
