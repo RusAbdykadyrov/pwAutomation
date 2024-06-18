@@ -50,7 +50,9 @@ jobs:
                  echo "Waiting for localhost to be available..."
                  sleep 5
                  done
-        
+            # - name: Run tests
+            #     - 4200:4200
+            #   run: npm run  pojectTest"
             
     bulding_project:
         needs: start_project
