@@ -10,7 +10,7 @@
     "ng": "ng",
     "start": "ng serve",
     "dropDown": "npx playwright test dropDown.spec.ts",
-    "lambdaTest": "npx playwright test lambdatest",
+    "lambdaTest": "npx playwright test tests/lambdaTest.spec.ts",
     "pojectTest": "npx playwright test project"
    
     
@@ -29,7 +29,7 @@
     "@nebular/auth": "10.0.0",
     "@nebular/eva-icons": "10.0.0",
     "@nebular/security": "10.0.0",
-    "@nebular/theme": "10.0.0",
+    "@nebular/theme": "10.0.0", 
     "@swimlane/ngx-charts": "^20.1.2",
     "angular2-chartjs": "0.4.1",
     "bootstrap": "4.3.1",
