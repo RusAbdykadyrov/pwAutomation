@@ -29,7 +29,7 @@ jobs:
             npx allure generate ./allure-resultes --clean 
 
       - name: Run Playwright tests
-        run: npm playwright pasv
+        run: npx playwright pasv
       - uses: actions/upload-artifact@v3
         if: always()
         with:
@@ -43,6 +43,5 @@ jobs:
           name: playwright-allure
           path: allure-report/
           retention-days: 30
-      - name: List Allure report directory
-        run: ls -al allure-report
+      
          

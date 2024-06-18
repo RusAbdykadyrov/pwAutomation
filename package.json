@@ -11,7 +11,7 @@
     "start": "ng serve",
     "dropDown": "npx playwright test dropDown.spec.ts",
     "lambdatest": "npx playwright test lambdatest.spec.ts",
-    "network": "npx playwright test network.spec.ts",
+    "pojectTest": "npx playwright test project.spec.ts",
     "pasv": "npx playwright test PASV.spec.ts"
     
   },
