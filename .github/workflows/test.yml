@@ -29,7 +29,7 @@ jobs:
             npx allure generate ./allure-resultes --clean 
 
       - name: Run Playwright tests
-        run: npx playwright lambdatest
+        run: npx playwright dropDawn
       - uses: actions/upload-artifact@v3
         if: always()
         with:
