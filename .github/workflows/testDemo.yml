@@ -52,7 +52,7 @@ jobs:
                  done
             - name: Run tests
                 - 4200:4200
-              run: npm run  pojectTest"
+              run: npm run projectTest"
             
     bulding_project:
         needs: start_project
