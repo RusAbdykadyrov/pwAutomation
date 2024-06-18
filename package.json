@@ -10,7 +10,7 @@
     "ng": "ng",
     "start": "ng serve",
     "dropDown": "npx playwright test dropDown.spec.ts",
-    "lambdaTest": "npx playwright test lambdatest.spec.ts",
+    "lambdaTest": "npx playwright test lambdatest",
     "pojectTest": "npx playwright test project"
    
     
