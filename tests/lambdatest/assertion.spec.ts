@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 test.describe('ASSERTION', () => {
-    test.use({viewport: { width:500,height:500}})
+    //.use({viewport: { width:500,height:500}})
     test('assertion', async ({ page }) => {
 
         await page.goto('https://www.lambdatest.com/')
