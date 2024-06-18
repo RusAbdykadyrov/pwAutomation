@@ -50,9 +50,6 @@ jobs:
                  echo "Waiting for localhost to be available..."
                  sleep 5
                  done
-                 npm run start
-                 echo 'Waiting for localhost' 
-                 done
             - name: Run tests
                 - 4200:4200
               run: npm run  pojectTest"
