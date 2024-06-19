@@ -71,6 +71,6 @@ jobs:
             run: npx playwright install --with-deps  # Установите Playwright с зависимостями
           
           - name: Run tests
-            run: npx run lambdaTest  # Запуск тестов
+            run: npm run lambdaTest  # Запуск тестов
     
               
