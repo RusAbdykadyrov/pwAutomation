@@ -70,7 +70,7 @@ jobs:
           - name: Install Playwright with dependencies
             run: npx playwright install --with-deps  # Установите Playwright с зависимостями
           
-          - name: Run tests
+          - name: Run lambdaTest
             run: npm run lambdaTest  # Запуск тестов
     
               
