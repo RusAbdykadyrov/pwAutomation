@@ -58,12 +58,19 @@ jobs:
         needs: start_project
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout
-              uses: actions/setup-node@v2
-            - name: Install dependencies
-              run: npm ci --force
-            - name: Install Playwright
-              run: npx playwright install -- with-deps
-            - name: Run test
-              run: npx run lambdaTest  
+          - name: Checkout repository
+            uses: actions/checkout@v3  # Используйте actions/checkout для клонирования репозитория
+          
+          - name: Setup Node.js
+            uses: actions/setup-node@v2  # Настройте Node.js
+            
+          - name: Install dependencies
+            run: npm ci --force  # Установка зависимостей с принудительным обновлением
+          
+          - name: Install Playwright with dependencies
+            run: npx playwright install --with-deps  # Установите Playwright с зависимостями
+          
+          - name: Run tests
+            run: npx run lambdaTest  # Запуск тестов
+    
               
